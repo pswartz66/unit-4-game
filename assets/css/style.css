@@ -8,6 +8,15 @@ body {
 
 }
 
+.container {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    padding: 2px;
+}
+
 .jumbotron {
     width: 100%;
 }
@@ -21,6 +30,8 @@ h1 {
 .navbar {
 
     width:100%;
+    margin-bottom: 20px;
+    
 
 }
 
@@ -30,6 +41,7 @@ h1 {
     margin: 0;
     color: #ffffff;
     /* background-color: #fff; */
+    overflow: none;
 }
 
 p {
@@ -42,7 +54,7 @@ p {
 .box-1 {
     height: 160px;
     width: 100%;
-    /* background-color: #a35555; */
+    background-color: #a35555;
     padding: 40px 40px 40px 40px;
 }
 
@@ -60,34 +72,96 @@ h2 {
     background-color: rgb(83, 225, 235);
     opacity: .4;
     text-align: center;
+    
 }
 
-.images {
-    height: 300px;
-    background-color: white;
-    overflow: none;
-    padding: 0;
+.mid {
+    margin-top: 10px;
 }
 
 
 img[alt*="redGem"] {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 6px;
 }
 
 
 img[alt*="greenGem"] {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    float: left;
+    margin: 6px;
 }
 
 img[alt*="blueGem"] {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 6px;
 }
 
 
 img[alt*="blueDiamond"] {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 6px;
 }
+
+
+.images:hover {
+    transform: scale(1.2);
+}
+
+
+
+.gems {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+   
+}
+
+@media screen and (max-width: 768px) {
+
+    .images {
+        height: 190px;
+        width: 190px;
+        overflow: none;
+        padding: 0;
+    }
+    
+    
+    img[alt*="redGem"] {
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    img[alt*="greenGem"] {
+        height: 100%;
+        width: 100%;
+    }
+    
+    img[alt*="blueGem"] {
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    img[alt*="blueDiamond"] {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pbackground {
+       display: none;
+    }
+
+}
+
