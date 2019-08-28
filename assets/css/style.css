@@ -4,7 +4,7 @@ body {
     background-image: url(../images/Aurora-seen-from-a-cave-in-Norway.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1.2;;
+    
 
 }
 
@@ -42,7 +42,7 @@ p {
 .box-1 {
     height: 160px;
     width: 100%;
-    background-color: #a35555;
+    /* background-color: #a35555; */
     padding: 40px 40px 40px 40px;
 }
 
@@ -53,4 +53,41 @@ h2 {
 #text-centered {
     font-size: 2.5rem;
     text-align: center;
+}
+
+.pbackground {
+    color: #000000;
+    background-color: rgb(83, 225, 235);
+    opacity: .4;
+    text-align: center;
+}
+
+.images {
+    height: 300px;
+    background-color: white;
+    overflow: none;
+    padding: 0;
+}
+
+
+img[alt*="redGem"] {
+    height: 100%;
+    width: 100%;
+}
+
+
+img[alt*="greenGem"] {
+    height: 100%;
+    width: 100%;
+}
+
+img[alt*="blueGem"] {
+    height: 100%;
+    width: 100%;
+}
+
+
+img[alt*="blueDiamond"] {
+    height: 100%;
+    width: 100%;
 }
