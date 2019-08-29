@@ -13,9 +13,11 @@
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-
+    <!-- Added a link to our css file -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Added link to the jQuery Library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <title>Crystal Collector</title>
@@ -52,7 +54,7 @@
                     <div class="row mid">
                         <div class="col-lg-6 col-md-6">
                             <h2>Random Number</h2>
-                            <p id="text-centered">#</p>
+                            <p id="text-centered"> <span id="randNum">#</span></p>
                         </div>
 
                         <div class="col-lg-6 col-md-6">
@@ -83,11 +85,11 @@
                         </div>
 
                         <div class="images">
-                            <img alt="blueGem" src="assets/images/blue-gem.png">                            
+                            <img alt="blueGem" src="assets/images/blue-gem.png">
                         </div>
 
                         <div class="images">
-                            <img alt="blueDiamond" src="assets/images/blue-diamond.png">                            
+                            <img alt="blueDiamond" src="assets/images/blue-diamond.png">
                         </div>
                     </div>
 
@@ -101,11 +103,20 @@
 
 
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#randNum").text(randomNumber);
+
+            
 
 
 
+        });
+
+    </script>
 </body>
 
 </html>
