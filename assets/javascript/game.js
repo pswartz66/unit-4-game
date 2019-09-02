@@ -9,6 +9,8 @@ var totalScore = 0;
 var scoreCounter = "";
 var targetNumber = [];
 
+var recordAttempts = 0;
+
 var redGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 var greenGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 var blueGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
