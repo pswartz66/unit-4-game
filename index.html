@@ -59,7 +59,7 @@
 
                         <div class="col-lg-6 col-md-6">
                             <h2>Total Score:</h2>
-                            <p id="text-centered">#</p>
+                            <p id="text-centered"><span id="total-score">#</span></p>
                         </div>
 
                     </div>
@@ -76,20 +76,20 @@
                     </div>
 
                     <div class="row gems">
-                        <div class="images">
-                            <img alt="redGem" src="assets/images/red-gem.jpg">
+                        <div class="col images">
+                            <img id="red-gem" alt="redGem" src="assets/images/red-gem.jpg">
                         </div>
 
-                        <div class="images">
-                            <img alt="greenGem" src="assets/images/green-gem.png">
+                        <div class="col images">
+                            <img id="green-gem" alt="greenGem" src="assets/images/green-gem.png">
                         </div>
 
-                        <div class="images">
-                            <img alt="blueGem" src="assets/images/blue-gem.png">
+                        <div class="col images">
+                            <img id="blue-gem" alt="blueGem" src="assets/images/blue-gem.png">
                         </div>
 
-                        <div class="images">
-                            <img alt="blueDiamond" src="assets/images/blue-diamond.png">
+                        <div class="col images">
+                            <img id="blue-diamond" alt="blueDiamond" src="assets/images/blue-diamond.png">
                         </div>
                     </div>
 
@@ -110,8 +110,17 @@
 
             $("#randNum").text(randomNumber);
 
-            
+            $("#total-score").text(redGemRandNum);
 
+
+
+        $("#red-gem").on("click", function() {
+            totalScore += redGemRandNum;
+            // console.log(totalScore);
+            console.log(redGemRandNum);
+
+
+        })
 
 
         });
