@@ -66,11 +66,11 @@
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <p id="text-centered">Wins:<span id="wins">#</span></p>
+                            <p id="text-centered">Wins: <span id="wins">#</span></p>
                         </div>
 
                         <div class="col-lg-6 col-md-6">
-                            <p id="text-centered">Losses:<span id="losses">#</span></p>
+                            <p id="text-centered">Losses: <span id="losses">#</span></p>
                         </div>
 
                     </div>
@@ -119,16 +119,27 @@
                     console.log("You won!!!")
                     wins ++;
                     $("#wins").text(wins);
+
+
+                    $("#total-score").text("0");
+                    totalScore = 0;
                 }
                 else {
+
                     if (randomNumber < totalScore) {
                         // add to losses
-
+                        losses ++;
+                        $("#losses").text(losses);
 
                         // reset picture #'s
 
 
                         // reset random Number
+
+
+                        // reset score
+                        $("#total-score").text("0");
+                        totalScore = 0;
                         
                     }
                 }
