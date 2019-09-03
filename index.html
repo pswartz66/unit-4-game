@@ -103,53 +103,91 @@
 
 
 
-    
+
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             $("#randNum").text(randomNumber);
 
             $("#total-score").text("#");
 
 
+            $(".images").on("click", function () {
 
-        $("#red-gem").on("click", function() {
-            totalScore += redGemRandNum;
-            // console.log(totalScore);
-            console.log(redGemRandNum);
-
-            $("#total-score").text(totalScore);
-
-        })
-
-        $("#green-gem").on("click", function() {
-            totalScore += greenGemRandNum;
-            // console.log(totalScore);
-            console.log(greenGemRandNum);
-
-            $("#total-score").text(totalScore);
-
-        })
+                if (randomNumber === totalScore) {
+                    console.log("You won!!!")
+                    wins ++;
+                    $("#wins").text(wins);
+                }
+                else {
+                    if (randomNumber < totalScore) {
+                        // add to losses
 
 
-        $("#blue-gem").on("click", function() {
-            totalScore += blueGemRandNum;
-            // console.log(totalScore);
-            console.log(greenGemRandNum);
+                        // reset picture #'s
 
-            $("#total-score").text(totalScore);
 
-        })
+                        // reset random Number
+                        
+                    }
+                }
 
-        $("#blue-diamond").on("click", function() {
-            totalScore += blueDiamondRandNum;
-            // console.log(totalScore);
-            console.log(blueDiamondRandNum);
 
-            $("#total-score").text(totalScore);
+            })
 
-        })
+
+
+
+
+
+
+            $("#red-gem").on("click", function () {
+                totalScore += redGemRandNum;
+                // console.log(totalScore);
+                console.log(redGemRandNum);
+
+                $("#total-score").text(totalScore);
+
+
+
+
+            })
+
+            $("#green-gem").on("click", function () {
+                totalScore += greenGemRandNum;
+                // console.log(totalScore);
+                console.log(greenGemRandNum);
+
+                $("#total-score").text(totalScore);
+
+
+
+            })
+
+
+            $("#blue-gem").on("click", function () {
+                totalScore += blueGemRandNum;
+                // console.log(totalScore);
+                console.log(greenGemRandNum);
+
+                $("#total-score").text(totalScore);
+
+
+
+            })
+
+
+            $("#blue-diamond").on("click", function () {
+                totalScore += blueDiamondRandNum;
+                // console.log(totalScore);
+                console.log(blueDiamondRandNum);
+
+                $("#total-score").text(totalScore);
+
+
+
+            })
 
 
 
