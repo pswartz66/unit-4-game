@@ -115,12 +115,21 @@
 
             $(".images").on("click", function () {
 
+                
+
                 if (randomNumber === totalScore) {
                     console.log("You won!!!")
+
+                    // add to wins
                     wins ++;
                     $("#wins").text(wins);
 
 
+                    // reset random Number & picture #'s
+                    $(reset ())
+
+
+                    // reset score
                     $("#total-score").text("0");
                     totalScore = 0;
                 }
@@ -131,11 +140,8 @@
                         losses ++;
                         $("#losses").text(losses);
 
-                        // reset picture #'s
-
-
-                        // reset random Number
-                        
+                        // reset random Number & picture #'s
+                        $(reset ())
 
 
                         // reset score
@@ -145,11 +151,9 @@
                     }
                 }
 
+                $("#randNum").text(randomNumber);
 
             })
-
-
-
 
 
 

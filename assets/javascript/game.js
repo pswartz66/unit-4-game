@@ -21,10 +21,28 @@ var blueGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 var blueDiamondRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 
 
-console.log(redGemRandNum);
-console.log(greenGemRandNum);
-console.log(blueGemRandNum);
-console.log(blueDiamondRandNum);
+function reset() {
+    randomNumber = "";
+    randomNumber = Math.floor(Math.random() * (120 - 19) + 19);
+
+    redGemRandNum = "";
+    redGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
+    
+    greenGemRandNum = "";
+    greenGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
+
+    blueGemRandNum = "";
+    blueGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
+
+    blueDiamondRandNum = "";
+    blueDiamondRandNum = Math.floor(Math.random() * (12 - 1) + 1);
+
+}
+
+// console.log(redGemRandNum);
+// console.log(greenGemRandNum);
+// console.log(blueGemRandNum);
+// console.log(blueDiamondRandNum);
 
 
 
