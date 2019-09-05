@@ -85,6 +85,7 @@ img[alt*="redGem"] {
     width: 200px;
     float: left;
     margin: 6px;
+    box-shadow: 0px 0px 30px 2px rgb(218, 88, 88);
 }
 
 
@@ -94,6 +95,7 @@ img[alt*="greenGem"] {
     background-color: #fff;
     float: left;
     margin: 6px;
+    box-shadow: 0px 0px 30px 2px rgb(105, 228, 93);
 }
 
 img[alt*="blueGem"] {
@@ -101,6 +103,7 @@ img[alt*="blueGem"] {
     width: 200px;
     float: left;
     margin: 6px;
+    box-shadow: 0px 0px 30px 2px rgb(93, 208, 228);
 }
 
 
@@ -109,6 +112,7 @@ img[alt*="blueDiamond"] {
     width: 200px;
     float: left;
     margin: 6px;
+    box-shadow: 0px 0px 30px 2px rgb(55, 102, 204);
 }
 
 

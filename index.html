@@ -39,7 +39,7 @@
         <div class="row main">
             <div class="col-lg-12 col-md-12">
                 <div class="content">
-                    <p class="pbackground" style="font-weight: bold">Instructions:</p>
+                    <p class="pbackground" id="title" style="font-weight: bold">Instructions:</p>
                     <p class="pbackground">There will be four crystals displayed as buttons on the page.
                         The player will be shown a random number at the start of the game.
                         When the player clicks on a crystal, it will add a specific amount of points to the player's
@@ -50,6 +50,10 @@
                         The player loses if their score goes above the random number.
                         The game restarts whenever the player wins or loses.
                     </p>
+
+                    <div class="col-lg-12 col-md-12">
+                        <p class="winlossStatement" id="text-centered"></p>
+                    </div>
 
                     <div class="row mid">
                         <div class="col-lg-6 col-md-6">
@@ -72,6 +76,7 @@
                         <div class="col-lg-6 col-md-6">
                             <p id="text-centered">Losses: <span id="losses">#</span></p>
                         </div>
+                        
 
                     </div>
 
@@ -115,7 +120,8 @@
 
             $(".images").on("click", function () {
 
-                
+                $(".winlossStatement").empty();
+                $(".pbackground").hide();
 
                 if (randomNumber === totalScore) {
                     console.log("You won!!!")
@@ -132,7 +138,13 @@
                     // reset score
                     $("#total-score").text("0");
                     totalScore = 0;
+
+                    // display win / loss statement
+                    $(".winlossStatement").html('<p>You Win!!!!</p>').css("font-size", "50px", "text-align", "center");
+
+
                 }
+
                 else {
 
                     if (randomNumber < totalScore) {
@@ -147,14 +159,18 @@
                         // reset score
                         $("#total-score").text("0");
                         totalScore = 0;
+
+
+                        // display win / loss statement
+                        $(".winlossStatement").html('<p>You Lose!!!!</p>').css("font-size", "50px", "text-align", "center");
                         
                     }
                 }
 
+                // reset the random number you're trying to target
                 $("#randNum").text(randomNumber);
 
             })
-
 
 
 
@@ -204,7 +220,6 @@
 
 
             })
-
 
 
 

@@ -21,6 +21,8 @@ var blueGemRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 var blueDiamondRandNum = Math.floor(Math.random() * (12 - 1) + 1);
 
 
+
+
 function reset() {
     randomNumber = "";
     randomNumber = Math.floor(Math.random() * (120 - 19) + 19);
