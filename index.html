@@ -113,27 +113,28 @@
     <script>
         $(document).ready(function () {
 
+            // when document is ready display random number
             $("#randNum").text(randomNumber);
 
+            // when document is ready display placeholder # strings
             $("#total-score").text("#");
 
 
             $(".images").on("click", function () {
 
+                // clear win loss message when user clicks an image
                 $(".winlossStatement").empty();
-                $(".pbackground").hide();
-
+                
+                // game logic: if user score equals the random number
+                // then you win
                 if (randomNumber === totalScore) {
-                    console.log("You won!!!")
 
                     // add to wins
                     wins ++;
                     $("#wins").text(wins);
 
-
                     // reset random Number & picture #'s
                     $(reset ())
-
 
                     // reset score
                     $("#total-score").text("0");
@@ -142,12 +143,14 @@
                     // display win / loss statement
                     $(".winlossStatement").html('<p>You Win!!!!</p>').css("font-size", "50px", "text-align", "center");
 
-
                 }
 
                 else {
 
+                    // game logic: if user score equals the random number
+                    // then you win
                     if (randomNumber < totalScore) {
+
                         // add to losses
                         losses ++;
                         $("#losses").text(losses);
@@ -160,7 +163,6 @@
                         $("#total-score").text("0");
                         totalScore = 0;
 
-
                         // display win / loss statement
                         $(".winlossStatement").html('<p>You Lose!!!!</p>').css("font-size", "50px", "text-align", "center");
                         
@@ -172,57 +174,49 @@
 
             })
 
-
-
             $("#red-gem").on("click", function () {
+
                 totalScore += redGemRandNum;
+
                 // console.log(totalScore);
                 console.log(redGemRandNum);
 
                 $("#total-score").text(totalScore);
 
-
-
-
             })
 
             $("#green-gem").on("click", function () {
+
                 totalScore += greenGemRandNum;
+
                 // console.log(totalScore);
                 console.log(greenGemRandNum);
 
                 $("#total-score").text(totalScore);
 
-
-
             })
-
 
             $("#blue-gem").on("click", function () {
+
                 totalScore += blueGemRandNum;
+
                 // console.log(totalScore);
                 console.log(greenGemRandNum);
 
                 $("#total-score").text(totalScore);
 
-
-
             })
 
-
             $("#blue-diamond").on("click", function () {
+
                 totalScore += blueDiamondRandNum;
+
                 // console.log(totalScore);
                 console.log(blueDiamondRandNum);
 
                 $("#total-score").text(totalScore);
 
-
-
             })
-
-
-
 
         });
 
